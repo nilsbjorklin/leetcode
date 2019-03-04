@@ -12,7 +12,6 @@ public class SummaryRanges {
         int lastNumber = nums[0], start = nums[0];
         result.append(start);
         for (int i = 1; i < nums.length; i++) {
-            String current = result.toString();
             if (nums[i] != lastNumber + 1) {
                 if (lastNumber != start)
                     result.append("->" + lastNumber);
