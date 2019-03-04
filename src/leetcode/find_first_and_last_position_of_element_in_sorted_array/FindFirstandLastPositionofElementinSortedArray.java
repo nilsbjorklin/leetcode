@@ -15,15 +15,6 @@ public class FindFirstandLastPositionofElementinSortedArray {
         if (start > end)
             return -1;
         int pivot = start + (end - start) / 2;
-        StringBuilder sb = new StringBuilder();
-        for (int i = start; i <= end; i++) {
-            if (i == pivot)
-                sb.append("!");
-            sb.append(nums[i]);
-            if(i != end)
-            sb.append(", ");
-        }
-        String debug = sb.toString();
         if (nums[start] == target)
             return start;
         if (nums[pivot] == target && (pivot == 0 || nums[pivot - 1] != target))
