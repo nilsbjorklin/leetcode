@@ -8,7 +8,6 @@ public class RemoveDuplicatesFromSortedList2 {
         ListNode startPos = null;
         boolean duplicate = false;
         while (head.next != null) {
-            int curVal = head.next.val, lastVal = head.val;
             if (head.next.val != head.val) {
                 if (duplicate) {
                     duplicate = false;
